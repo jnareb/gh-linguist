@@ -15,11 +15,11 @@ Note that `pip install linguist` will try to install [douban/linguist](https://g
 
 #### Language detection
 
-Linguist defines the list of all languages known in a [yaml file](https://github.com/retanoj/linguist/blob/master/linguist/libs/languages.yml). In order for a file to be highlighted, a language and lexer must be defined there.
+Linguist defines the list of all languages known in a [yaml file](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/languages.yml). In order for a file to be highlighted, a language and lexer must be defined there.
 
 Most languages are detected by their file extension. This is the fastest and most common situation.
 
-For disambiguating between files with common extensions, we use a [Bayesian classifier](https://github.com/retanoj/linguist/blob/master/linguist/libs/classifier.py). For an example, this helps us tell the difference between `.h` files which could be either C, C++, or Obj-C.
+For disambiguating between files with common extensions, we use a [Bayesian classifier](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/classifier.py). For an example, this helps us tell the difference between `.h` files which could be either C, C++, or Obj-C.
 
 For testing, there is a simple FileBlob API:
 
@@ -31,7 +31,8 @@ FileBlob('test.py').language.name #=> 'Python'
 FileBlob('test_file').language.name #=> 'Python'
 ```
 
-See [linguist/libs/language.py](https://github.com/retanoj/linguist/blob/master/linguist/libs/language.py) and [lib/linguist/languages.yml](https://github.com/retanoj/linguist/blob/master/linguist/libs/languages.yml).
+See [linguist/libs/language.py](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/language.py)
+and [lib/linguist/languages.yml](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/languages.yml).
 
 
 #### Syntax Highlighting
@@ -90,7 +91,8 @@ from linguist.libs.file_blob import FileBlob
 FileBlob('static/js/jquery-2.0.0.min.js').is_vendored #=> True
 ```
 
-See [BlobHelper#is_vendored](https://github.com/retanoj/linguist/blob/master/linguist/libs/blob_helper.py#L279) and [linguist/libs/vendor.yml](https://github.com/retanoj/linguist/blob/master/linguist/libs/vendor.yml).
+See [BlobHelper#is_vendored](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/blob_helper.py#L279)
+and [linguist/libs/vendor.yml](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/vendor.yml).
 
 #### Generated file detection
 
@@ -101,7 +103,7 @@ FileBlob('jquery-2.0.0.min.js').is_generated #=> True
 FileBlob('app.coffee').is_generated #=> True
 ```
 
-See [Generated#is_generated](https://github.com/retanoj/linguist/blob/master/linguist/libs/generated.py).
+See [Generated#is_generated](https://github.com/jnareb/gh-linguist/blob/master/linguist/libs/generated.py).
 
 
 ## Contributing
