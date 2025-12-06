@@ -1,7 +1,5 @@
 Linguist
 ========
-[![Build Status](https://travis-ci.org/retanoj/linguist.png)](https://travis-ci.org/retanoj/linguist)
-
 Language Savant, Python clone of [github/linguist](https://github.com/liluo/linguist/).
 
 ## Installation
