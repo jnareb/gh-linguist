@@ -1,6 +1,6 @@
 Linguist
 ========
-Language Savant, Python clone of [github/linguist](https://github.com/liluo/linguist/).
+Language Savant, Python clone of [github-linguist/linguist](https://github.com/github-linguist/linguist) (in Ruby).
 
 ## Installation
 
