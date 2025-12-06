@@ -8,8 +8,10 @@ Language Savant, Python clone of [github/linguist](https://github.com/liluo/ling
 
 PIP
 ```bash
-pip install linguist
+pip install gh-linguist@git+https://github.com/jnareb/gh-linguist#egg=master
 ```
+
+Note that `pip install linguist` will try to install [douban/linguist](https://github.com/douban/linguist).
 
 ## Features
 
