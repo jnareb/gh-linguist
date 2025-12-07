@@ -9,7 +9,10 @@ PIP
 pip install gh-linguist@git+https://github.com/jnareb/gh-linguist#egg=master
 ```
 
-Note that `pip install linguist` will try to install [douban/linguist](https://github.com/douban/linguist).
+`pip install linguist` will try to install [douban/linguist](https://github.com/douban/linguist)
+from PyPI (<https://pypi.org/project/linguist/>).
+
+Note: [install requires libmagic-dev and libicu-dev libraries](https://github.com/douban/linguist/issues/25).
 
 ## Features
 
