@@ -1,5 +1,5 @@
-Linguist
-========
+GH-Linguist
+===========
 Language Savant, Python clone of [github-linguist/linguist](https://github.com/github-linguist/linguist) (in Ruby).
 
 ## Installation

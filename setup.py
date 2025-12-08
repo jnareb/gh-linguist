@@ -5,6 +5,6 @@ from setuptools import setup
 from linguist import VERSION
 
 
-setup(name='linguist',
+setup(name='gh-linguist',
       version=VERSION,
 )

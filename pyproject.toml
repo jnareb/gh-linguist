@@ -3,7 +3,7 @@ requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "linguist"
+name = "gh-linguist"
 # 'version' is defined dynamically
 dynamic = ["version"]
 keywords = [
