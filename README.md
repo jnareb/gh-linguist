@@ -128,6 +128,11 @@ python run.py
 
 ## Changelog
 
+__v0.1.2 [2020-01-13]__
+* Rename the project from 'linguist' to 'gh-linguist'
+* Switch to using `pyproject.toml`, stub `setup.py`
+* Add @jnareb as maintainer
+
 __v0.1.1 [2019-12-24]__
 * Only for Python 3.x
 
