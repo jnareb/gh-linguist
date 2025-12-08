@@ -39,7 +39,6 @@ dependencies = [
 classifiers = [
     "Programming Language :: Python :: 2",  # to be removed
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: New BSD",
     "Operating System :: OS Independent",
     "Environment :: Console",
     "Intended Audience :: Developers",
