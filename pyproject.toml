@@ -17,9 +17,9 @@ readme = "README.md"
 license = "BSD-3-Clause"  # https://spdx.org/licenses/
 license-files = ["LICEN[CS]E"]
 authors = [
-    {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
-    {name = "retanoj", email = "s919student@gmail.com"},
     {name = "liluo", email = "i@liluo.org"},
+    {name = "retanoj", email = "s919student@gmail.com"},
+    {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
 ]
 maintainers = [
     {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
