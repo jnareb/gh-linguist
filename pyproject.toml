@@ -44,8 +44,8 @@ classifiers = [
 #    {pylinguist = "bin/pylinguist"},
 #]
 [project.urls]
-github = "https://github.com/jnareb/gh-linguist"
-issues = "https://github.com/jnareb/gh-linguist/issues"
+Homepage = "https://github.com/jnareb/gh-linguist"
+Issues = "https://github.com/jnareb/gh-linguist/issues"
 
 [tool.setuptools]
 packages = ["linguist"]
