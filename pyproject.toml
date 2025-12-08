@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gh-linguist"
+# 'version' is defined dynamically
+dynamic = ["version"]
+keywords = [
+    "linguist",
+    "detect",
+    "programming",
+    "language",
+]
+description = "Language Savant - Python port of GitHub Linguist"
+readme = "README.md"
+license = "BSD-3-Clause"  # https://spdx.org/licenses/
+license-files = ["LICEN[CS]E"]
+authors = [
+    {name = "liluo", email = "i@liluo.org"},
+    {name = "retanoj", email = "s919student@gmail.com"},
+    {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
+]
+maintainers = [
+    {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
+]
+dependencies = [
+    "PyYAML",
+    "six",  # to be removed (together with support for Python 2)
+    "pygments>=2.5.2",
+    "pygments-github-lexers>=0.0.3",
+    "charlockholmes",
+    "mime>=0.1.0",
+]
+classifiers = [
+    "Programming Language :: Python :: 2",  # to be removed
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development",
+]
+#scripts = [
+#    {pylinguist = "bin/pylinguist"},
+#]
+[project.urls]
+Homepage = "https://github.com/jnareb/gh-linguist"
+Issues = "https://github.com/jnareb/gh-linguist/issues"
+
+[tool.setuptools]
+packages = ["linguist"]
+# see https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#setuptools-specific-configuration
+script-files = [
+    "bin/pylinguist",
+]
+[tool.setuptools.dynamic]
+version = {attr = "linguist.VERSION"}
