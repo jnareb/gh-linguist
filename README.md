@@ -4,9 +4,13 @@ Language Savant, Python clone of [github-linguist/linguist](https://github.com/g
 
 ## Installation
 
-PIP
+Using PIP from GitHub
 ```bash
-pip install gh-linguist@git+https://github.com/jnareb/gh-linguist#egg=master
+python -m pip install gh-linguist@git+https://github.com/jnareb/gh-linguist#egg=master
+```
+or from TestPyPI
+```commandline
+python -m pip install --index-url https://test.pypi.org/simple/ --extra-index-url https://pypi.org/simple/ gh-linguist
 ```
 
 `pip install linguist` will try to install [douban/linguist](https://github.com/douban/linguist)
