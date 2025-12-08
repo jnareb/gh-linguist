@@ -16,10 +16,6 @@ description = "Language Savant - Python port of GitHub Linguist"
 readme = "README.md"
 license = "BSD-3-Clause"  # https://spdx.org/licenses/
 license-files = ["LICEN[CS]E"]
-urls = [
-    {github = "https://github.com/jnareb/gh-linguist"},
-    {issues = "https://github.com/jnareb/gh-linguist/issues"},
-]
 authors = [
     {name = "Jakub Narębski", email = "jnareb@mat.umk.pl"},
     {name = "retanoj"},
@@ -47,6 +43,9 @@ classifiers = [
 #scripts = [
 #    {pylinguist = "bin/pylinguist"},
 #]
+[project.urls]
+github = "https://github.com/jnareb/gh-linguist"
+issues = "https://github.com/jnareb/gh-linguist/issues"
 
 [tool.setuptools]
 # see https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#setuptools-specific-configuration
