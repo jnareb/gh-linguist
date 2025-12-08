@@ -48,6 +48,7 @@ github = "https://github.com/jnareb/gh-linguist"
 issues = "https://github.com/jnareb/gh-linguist/issues"
 
 [tool.setuptools]
+packages = ["linguist"]
 # see https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#setuptools-specific-configuration
 script-files = [
     "bin/pylinguist",
