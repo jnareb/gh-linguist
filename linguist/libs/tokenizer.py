@@ -16,9 +16,9 @@ BYTE_LIMIT = 100000
 
 # Start state on token, ignore anything till the next newline
 SINGLE_LINE_COMMENTS = [
-    '//',  # C
-    '#',   # Python, Ruby
-    '%',   # Tex
+    r'//',  # C
+    r'#',   # Python, Ruby
+    r'%',   # Tex
 ]
 
 # Start state on opening token, ignore anything until the closing
@@ -35,7 +35,7 @@ MULTI_LINE_COMMENTS = [
 MULTI_LINE_COMMENT_DICT = dict([(s, escape(e))
                                 for s, e in MULTI_LINE_COMMENTS])
 
-START_SINGLE_LINE_COMMENT = '|'.join(['\s*%s ' % escape(c) for c in SINGLE_LINE_COMMENTS])
+START_SINGLE_LINE_COMMENT = '|'.join([r'\s*%s ' % escape(c) for c in SINGLE_LINE_COMMENTS])
 START_MULTI_LINE_COMMENT = '|'.join([escape(c[0]) for c in MULTI_LINE_COMMENTS])
 
 
@@ -53,7 +53,7 @@ REGEX_COMMON_OPERATORS = r'<<?|\+|\-|\*|\/|%|&&?|\|\|?'
 REGEX_EMIT_START_TOKEN = r'<\/?[^\s>]+'
 REGEX_EMIT_TRAILING = r'\w+='
 REGEX_EMIT_WORD = r'\w+'
-REGEX_EMIT_END_TAG = '>'
+REGEX_EMIT_END_TAG = r'>'
 
 REGEX_SHEBANG_FULL = r'^#!\s*\S+'
 REGEX_SHEBANG_WHITESPACE = r'\s+'

@@ -61,8 +61,8 @@ project.language.name #=> 'Python'
 
 project.languages #=> defaultdict(<type 'int'>, {<Language name:Python>: 53446, <Language name:JavaScript>: 1991})
 
-for lang, count in projects.languages.items():
-    print lang.name, count
+for lang, count in project.languages.items():
+    print(lang.name, count)
 #=> Python, 53446
 #=> JavaScript, 1991
 ```

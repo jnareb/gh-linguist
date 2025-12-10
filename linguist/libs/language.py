@@ -303,7 +303,7 @@ class Language(with_metaclass(ItemMeta, object)):
         Internal: Get default alias name
         Returns the alias name String
         """
-        return re.sub('\s', '-', self.name.lower())
+        return re.sub(r'\s', '-', self.name.lower())
 
     @property
     def escaped_name(self):

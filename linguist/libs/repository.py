@@ -52,7 +52,7 @@ class Repository(object):
     def get_files(base_path):
         join, isfile = os.path.join, os.path.isfile
         for root, dirs, files in os.walk(base_path, topdown=False, followlinks=False):
-            if re.search('\/\.', root):
+            if re.search(r'/\.', root):
                 continue
             for f in files:
                 full_path = join(root, f)

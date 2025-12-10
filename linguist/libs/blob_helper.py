@@ -20,7 +20,7 @@ MEGABYTE = 1024 * 1024
 DIR = dirname(realpath(__file__))
 VENDOR_PATH = join(DIR, "vendor.yml")
 VENDORED_PATHS = yaml.load(open(VENDOR_PATH), Loader=yaml.FullLoader)
-VENDORED_REGEXP = re.compile('|'.join(VENDORED_PATHS))
+VENDORED_REGEXP = re.compile(r'|'.join(VENDORED_PATHS))
 
 
 class BlobHelper(object):
@@ -249,7 +249,7 @@ class BlobHelper(object):
 
         Returns Integer
         """
-        return len(list(filter(re.compile('\S').search, self.lines)))
+        return len(list(filter(re.compile(r'\S').search, self.lines)))
 
     @property
     def is_safe_to_colorize(self):
