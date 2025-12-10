@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-from urllib.parse import quote_plus
+from six.moves.urllib.parse import quote_plus
 from os.path import realpath, dirname, splitext, basename, join
 
 import yaml

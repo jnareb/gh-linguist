@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-from urllib.parse import quote
+from six.moves.urllib.parse import quote
 from os.path import realpath, dirname, basename, splitext, join
 from collections import defaultdict
 
